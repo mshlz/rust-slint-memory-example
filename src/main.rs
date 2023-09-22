@@ -66,6 +66,7 @@ slint::slint! {
         width: 64px;
         background: solved ? #34CE57 : #3960D5;
         animate background { duration: 800ms; }
+        border-radius: 10px;
 
         Image {
             source: icon;
@@ -101,6 +102,7 @@ slint::slint! {
     }
 
     export component MainWindow inherits Window {
+        title: "Memory Game - 2023";
         width: 326px;
         height: 326px;
 
@@ -118,8 +120,8 @@ slint::slint! {
             { image: @image-url("icons/video.png") },
         ];
         for tile[i] in memory_tiles : MemoryTile {
-            x: mod(i, 4) * 74px;
-            y: floor(i / 4) * 74px;
+            x: mod(i, 4) * 74px + 20px;
+            y: floor(i / 4) * 74px + 20px;
             width: 64px;
             height: 64px;
             icon: tile.image;
