@@ -98,6 +98,7 @@ slint::slint! {
         }
 
         TouchArea {
+            mouse-cursor: pointer;
             clicked => {
                 // Delegate to the user of this element
                 root.clicked();
