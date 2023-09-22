@@ -1,0 +1,14 @@
+{
+  "name": "memory-slint",
+  "version": "0.1.0",
+  "files": [
+    "memory_slint_bg.wasm",
+    "memory_slint.js",
+    "memory_slint.d.ts"
+  ],
+  "module": "memory_slint.js",
+  "types": "memory_slint.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
