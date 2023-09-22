@@ -1,5 +1,7 @@
 # memory slint demo
 
+(based on: https://slint.dev/releases/1.2.0/docs/tutorial/rust/introduction)
+
 ### requirements
 
 - rust
